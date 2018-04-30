@@ -1,0 +1,19 @@
+.contest-stuff {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .stuff-item {
+    width: 19%;
+    h3 {
+      margin-top: 15px;
+      @include headings;
+    }
+    img {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}

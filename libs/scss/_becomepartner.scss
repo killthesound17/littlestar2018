@@ -1,0 +1,105 @@
+form {
+    width: 57%;
+    margin: 30px auto;
+
+    input[type="tel"],
+    input[type="text"] {
+        margin-top: 42px;
+        width: 45%;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #fff;
+        background: none;
+        font-style: italic;
+        margin-right: 9%;
+    }
+    input[type="text"] {
+      width: 90%;
+    }
+    ::-webkit-input-placeholder {
+      color: $lightgray;
+      font-family: $mainfont;
+      font-style: normal;
+      letter-spacing: 2px;
+      font-size: 12px;
+
+    }
+    ::-moz-placeholder          {
+      color: $lightgray;
+      font-family: $mainfont;
+      font-style: normal;
+      letter-spacing: 2px;
+      font-size: 12px;
+
+    }/* Firefox 19+ */
+    :-moz-placeholder           {
+      color: $lightgray;
+      font-family: $mainfont;
+      font-style: normal;
+      letter-spacing: 2px;
+      font-size: 12px;
+
+    }/* Firefox 18- */
+    :-ms-input-placeholder      {
+      color: $lightgray;
+      font-family: $mainfont;
+      font-style: normal;
+      letter-spacing: 2px;
+      font-size: 12px;
+
+    }
+
+    input[type="text"]:focus, input[type="tel"]:focus {
+        border: 1px solid #fff;
+        background-color: rgba(119, 204, 249, 0.1);
+    }
+
+    input[type="email"] {
+        margin-top: 42px;
+        width: 45%;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #fff;
+        background: none;
+        font-family: Lato;
+        font-style: italic;
+    }
+
+    input[type="email"]:focus {
+        border: 1px solid #fff9;
+        background-color: rgba(119, 204, 249, 0.1);
+    }
+
+    textarea {
+        margin-top: 42px;
+        width: 45%;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #fff;
+        background: none;
+        font-family: Lato;
+        font-style: italic;
+        width: 100%;
+        margin: 100px 0 50px;
+    }
+
+    textarea:focus {
+        border: 1px solid #fff;
+        background-color: rgba(119, 204, 249, 0.1);
+    }
+
+    input[type="submit"] {
+        width: 183px;
+        height: 60px;
+        border: 3px solid #ffffff;
+        background: none;
+    }
+
+    footer .container form input[type="submit"]:hover {
+        border: 1px solid #fff;
+        background-color: rgba(119, 204, 249, 0.1);
+    }
+}

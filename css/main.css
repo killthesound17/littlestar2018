@@ -1,0 +1,316 @@
+* {
+  outline: 0 !important; }
+
+header,
+section {
+  position: relative; }
+
+svg {
+  width: 100%;
+  position: absolute;
+  z-index: 1000; }
+  svg path {
+    fill: #dedede; }
+
+section {
+  padding: 50px 0px; }
+  section h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Alegreya Sans";
+    margin-bottom: 40px; }
+  section p {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Alegreya Sans";
+    letter-spacing: 1px;
+    width: 80%;
+    margin: 0 auto;
+    text-transform: none; }
+
+.judges h2, .judges p,
+.becomepartner h2,
+.becomepartner p {
+  color: #dedede; }
+
+.main-head {
+  padding-top: 10px;
+  min-height: 620px;
+  background-color: #373737;
+  background-size: cover; }
+
+.header-logo {
+  height: 150px;
+  z-index: 1000;
+  position: relative; }
+  .header-logo .main-logo {
+    height: 100%; }
+  .header-logo .toggle-menu {
+    position: relative;
+    float: right;
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 5px;
+    background-color: inherit;
+    z-index: 2000 !important;
+    cursor: pointer; }
+
+.sandwich {
+  display: block;
+  padding: 0;
+  z-index: 5000;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+.sw-topper {
+  margin-top: 13px;
+  display: block;
+  position: relative;
+  top: 0;
+  width: 50px;
+  height: 5px;
+  background: #dedede;
+  border: none;
+  border-radius: 2px 2px 2px 2px;
+  transition: transform 0.5s, top 0.2s; }
+
+/* transition-delay: 0.2s, 0s; */
+.sw-bottom {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 5px;
+  top: 10px;
+  background: white;
+  border: none;
+  border-radius: 2px 2px 2px 2px;
+  transition: transform 0.5s, top 0.2s;
+  transition-delay: 0.2s, 0s; }
+
+.sw-footer {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 5px;
+  top: 20px;
+  background: white;
+  border: none;
+  border-radius: 2px 2px 2px 2px;
+  transition: all 0.5s;
+  transition-delay: 0.1s; }
+
+.sandwich.active .sw-topper {
+  top: 8.5px;
+  transform: rotate(140deg); }
+.sandwich.active .sw-bottom {
+  top: 3.5px;
+  transform: rotate(-140deg); }
+.sandwich.active .sw-footer {
+  opacity: 0;
+  top: 0;
+  transform: rotate(180deg); }
+
+.top-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(55, 55, 55, 0.8);
+  z-index: 1200;
+  right: 0;
+  top: 0;
+  display: none; }
+  .top-menu ul,
+  .top-menu li {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .top-menu ul {
+    margin-top: 150px;
+    text-align: center; }
+    .top-menu ul a {
+      color: #dedede;
+      display: block;
+      padding: 20px 0;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 2px; }
+      .top-menu ul a:hover {
+        background-color: rgba(84, 25, 89, 0.7);
+        transition: all 0.2s ease-in; }
+
+.top-wrap {
+  position: relative;
+  z-index: 1300;
+  text-align: center;
+  height: 50%; }
+  .top-wrap .heading-wrap {
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%); }
+    .top-wrap .heading-wrap .some-col {
+      width: 100%; }
+    .top-wrap .heading-wrap h1 {
+      text-align: center;
+      padding: 20px;
+      font-family: 'Rochester';
+      font-size: 56px;
+      font-weight: 700;
+      text-transform: none;
+      color: #dedede;
+      letter-spacing: 4px;
+      border: 5px solid #dedede;
+      background-color: rgba(55, 55, 55, 0.4); }
+    .top-wrap .heading-wrap p {
+      font-family: "Alegreya Sans";
+      font-size: 36px;
+      color: #dedede;
+      letter-spacing: 2px; }
+
+.contest-stuff {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .contest-stuff .stuff-item {
+    width: 19%; }
+    .contest-stuff .stuff-item h3 {
+      margin-top: 15px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-family: "Alegreya Sans"; }
+    .contest-stuff .stuff-item img {
+      display: block;
+      width: 80%;
+      margin: 0 auto; }
+
+.slider {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+.slider-item {
+  padding-bottom: 30px;
+  border: 3px solid #dedede;
+  background-color: rgba(222, 222, 222, 0.5);
+  width: 30%;
+  margin: 0 15px; }
+  .slider-item img {
+    display: block;
+    width: 100%; }
+  .slider-item h3 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Alegreya Sans"; }
+  .slider-item p {
+    color: #373737; }
+
+.partnerlogos {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .partnerlogos .partnerlogo {
+    width: 19%; }
+    .partnerlogos .partnerlogo img {
+      display: block;
+      width: 100%; }
+
+form {
+  width: 57%;
+  margin: 30px auto;
+  /* Firefox 19+ */
+  /* Firefox 18- */ }
+  form input[type="tel"],
+  form input[type="text"] {
+    margin-top: 42px;
+    width: 45%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #fff;
+    background: none;
+    font-style: italic;
+    margin-right: 9%; }
+  form input[type="text"] {
+    width: 90%; }
+  form ::-webkit-input-placeholder {
+    color: #dedede;
+    font-family: "Alegreya Sans";
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 12px; }
+  form ::-moz-placeholder {
+    color: #dedede;
+    font-family: "Alegreya Sans";
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 12px; }
+  form :-moz-placeholder {
+    color: #dedede;
+    font-family: "Alegreya Sans";
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 12px; }
+  form :-ms-input-placeholder {
+    color: #dedede;
+    font-family: "Alegreya Sans";
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 12px; }
+  form input[type="text"]:focus, form input[type="tel"]:focus {
+    border: 1px solid #fff;
+    background-color: rgba(119, 204, 249, 0.1); }
+  form input[type="email"] {
+    margin-top: 42px;
+    width: 45%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #fff;
+    background: none;
+    font-family: Lato;
+    font-style: italic; }
+  form input[type="email"]:focus {
+    border: 1px solid #fff9;
+    background-color: rgba(119, 204, 249, 0.1); }
+  form textarea {
+    margin-top: 42px;
+    width: 45%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #fff;
+    background: none;
+    font-family: Lato;
+    font-style: italic;
+    width: 100%;
+    margin: 100px 0 50px; }
+  form textarea:focus {
+    border: 1px solid #fff;
+    background-color: rgba(119, 204, 249, 0.1); }
+  form input[type="submit"] {
+    width: 183px;
+    height: 60px;
+    border: 3px solid #ffffff;
+    background: none; }
+  form footer .container form input[type="submit"]:hover {
+    border: 1px solid #fff;
+    background-color: rgba(119, 204, 249, 0.1); }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,24 @@
+.slider {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.slider-item {
+  padding-bottom: 30px;
+  border: 3px solid $lightgray;
+  background-color: rgba(222, 222, 222, 0.5);
+  width: 30%;
+  margin: 0 15px;
+  img {
+    display: block;
+    width: 100%;
+  }
+  h3 {
+    @include headings;
+  }
+  p {
+    color: $darkgray;
+  }
+
+}

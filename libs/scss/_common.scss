@@ -1,0 +1,53 @@
+$darkgray: rgb(55, 55, 55);
+$darkgrayinh: rgba(55, 55, 55, 0.8);
+$lightgray: rgb(222, 222, 222);
+$mainfont: "Alegreya Sans";
+@mixin headings {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: $mainfont;
+}
+* {
+  outline: 0 !important;
+}
+header,
+section {
+  position: relative;
+}
+
+svg {
+  // height: 1%;
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+  path{
+    fill: $lightgray;
+  }
+}
+
+section {
+  padding: 50px 0px;
+  h2 {
+    @include headings;
+    margin-bottom: 40px;
+  }
+  p {
+    @include headings;
+    letter-spacing: 1px;
+    width: 80%;
+    margin: 0 auto;
+    text-transform: none;
+  }
+}
+.judges,
+.becomepartner{
+  h2, p {
+    color: $lightgray;
+
+  }
+  // h2 {
+  //   box-shadow: 0 0 0 1000px rgba(0,0,0,0.5);
+  //   background-color: rgba(0,0,0,0.5);
+  // }
+}
